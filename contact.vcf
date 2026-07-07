@@ -1,10 +1,9 @@
 BEGIN:VCARD
 VERSION:3.0
-N:Hemlata;Anchal;;;
-FN:Anchal Hemlata
+N:;Anchal;;;
+FN:Anchal
 ORG:Anchal Hemlata and Associates
 TITLE:Chartered Accountant
 TEL;TYPE=WORK,VOICE:+919050540819
 EMAIL;TYPE=PREF,INTERNET:anchalgoyal13@gmail.com
-URL:https://wa.me/919050540819
 END:VCARD
