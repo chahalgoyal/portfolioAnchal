@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Digital Business Card - Anchal Hemlata and Associates">
+    <title>Anchal | Chartered Accountant</title>
+    
+    <!-- Favicon (Heart icon in #dee8f4) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='%23dee8f4' d='M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z'/></svg>">
+    
+    <!-- Open Graph Meta Tags for Sharing -->
+    <meta property="og:title" content="Anchal Hemlata | Chartered Accountant">
+    <meta property="og:description" content="Strategic financial advisory, tax planning, and corporate compliance services with utmost integrity.">
+    <meta property="og:image" content="hero.jpg">
+    <meta property="og:type" content="profile">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Clean, geometric font matching the visiting card -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <div class="desktop-wrapper">
+        <main class="mobile-card">
+            
+            <!-- Hero Image Background -->
+            <div class="hero-image" id="heroImage">
+                <div class="hero-overlay"></div>
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+
+            <!-- Content Panel -->
+            <div class="content-panel">
+                
+                <header class="profile-header animate-item" style="--delay: 1;">
+                    <h1 class="profile-name">ANCHAL</h1>
+                    <div class="divider"></div>
+                    <p class="profile-title">CHARTERED ACCOUNTANT</p>
+                    
+                    <h2 class="firm-name">Anchal Hemlata and Associates</h2>
+                    <p class="profile-bio">Strategic financial advisory, tax planning, and corporate compliance services with utmost integrity.</p>
+                </header>
+
+                <!-- Main Action Links -->
+                <nav class="links-nav">
+                    
+                    <a href="contact.vcf" class="action-button highlight animate-item" style="--delay: 1.5;" download>
+                        <span class="button-icon"><i class="fas fa-user-plus"></i></span>
+                        <span class="button-text">Save to Contacts</span>
+                        <i class="fas fa-chevron-right arrow-icon"></i>
+                    </a>
+                    
+                    <a href="mailto:anchalgoyal13@gmail.com" class="action-button animate-item" style="--delay: 2;">
+                        <span class="button-icon"><i class="fas fa-envelope"></i></span>
+                        <span class="button-text">Email Me</span>
+                        <i class="fas fa-chevron-right arrow-icon"></i>
+                    </a>
+                    
+                    <a href="https://wa.me/919050540819" class="action-button animate-item" style="--delay: 3;">
+                        <span class="button-icon"><i class="fab fa-whatsapp"></i></span>
+                        <span class="button-text">WhatsApp Consult</span>
+                        <i class="fas fa-chevron-right arrow-icon"></i>
+                    </a>
+                </nav>
+
+                <!-- Social Icons -->
+                <div class="social-links animate-item" style="--delay: 6;">
+                    <a href="https://www.linkedin.com/in/anchal-goyal-3a378a191/" aria-label="LinkedIn" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+
+                <footer class="footer animate-item" style="--delay: 7;">
+                    <p>&copy; 2026 Anchal Hemlata and Associates.</p>
+                </footer>
+            </div>
+        </main>
+    </div>
+
+    <!-- Script for parallax fade effect hooked to window scroll -->
+    <script>
+        const heroImage = document.getElementById('heroImage');
+
+        window.addEventListener('scroll', () => {
+            // Use window scroll instead of container scroll
+            let scrollTop = window.scrollY || document.documentElement.scrollTop;
+            
+            let opacity = 1 - (scrollTop / 250);
+            if (opacity < 0) opacity = 0;
+            heroImage.style.opacity = opacity;
+        });
+    </script>
+</body>
+</html>
